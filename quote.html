@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get a quote | [Business Name]</title>
+  <meta name="description" content="Get a draft estimate for home cleaning in Hamilton, Ontario. A real AI quote is coming.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">[Business Name]
+        <span>Premium home cleaning · Hamilton, Ontario</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Primary">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quote.html" aria-current="page">Get a quote</a></li>
+            <li><a href="book.html">Book</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="cleaners.html">Become a cleaner</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">My account</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="draft-banner">
+    <p class="wrap">This is a first-draft website. Pricing, policies, and legal pages are pending owner approval, and they need legal review. Contact details are placeholders.</p>
+  </div>
+  <main id="main">
+    <section class="section">
+      <div class="wrap">
+        <h1>Get a photo quote</h1>
+        <p class="lead">Upload photos for each room, choose the work you need, and see a draft estimate range. A real AI quote is coming. Photos are not uploaded anywhere yet; previews stay on this device only.</p>
+        <p class="draft-note">Draft pricing, pending owner approval</p>
+
+        <form id="quote-form" class="quote-layout" action="#" method="post">
+          <div>
+            <div class="form-card" style="margin-bottom:1rem;">
+              <h2>1. Scan your rooms with photos</h2>
+              <p>Add a room, choose its type, and attach photos. You can add as many rooms as you need.</p>
+              <div id="rooms"></div>
+              <button type="button" class="btn btn-light" id="add-room">Add another room</button>
+            </div>
+
+            <div class="form-card" style="margin-bottom:1rem;">
+              <h2>2. Home and service</h2>
+              <p>
+                <label for="home-size">Home size</label>
+                <select id="home-size" name="home-size">
+                  <option value="condo">Condo or 1-bedroom</option>
+                  <option value="two">2-bedroom</option>
+                  <option value="three">3-bedroom</option>
+                </select>
+                <span class="hint">Larger homes are not priced in this draft. We will confirm those quotes separately.</span>
+              </p>
+              <fieldset>
+                <legend>Type of clean</legend>
+                <label class="choice"><input type="radio" name="service" value="standard" checked> Standard clean</label>
+                <label class="choice"><input type="radio" name="service" value="deep"> Deep clean, about 1.7 times the standard price</label>
+                <label class="choice"><input type="radio" name="service" value="move"> Move-in or move-out, $400 to $650</label>
+                <label class="choice"><input type="radio" name="service" value="airbnb"> Airbnb turnover, from $160</label>
+              </fieldset>
+            </div>
+
+            <div class="form-card" style="margin-bottom:1rem;">
+              <h2>3. Tasks and cleaners</h2>
+              <fieldset>
+                <legend>Included tasks</legend>
+                <p class="hint">These are part of a standard visit in this draft. They do not change the estimate.</p>
+                <label class="choice"><input type="checkbox" name="included" value="dust" checked> Dusting and surfaces</label>
+                <label class="choice"><input type="checkbox" name="included" value="floors" checked> Floors vacuumed and washed</label>
+                <label class="choice"><input type="checkbox" name="included" value="kitchen" checked> Kitchen surfaces and sink</label>
+                <label class="choice"><input type="checkbox" name="included" value="baths" checked> Bathrooms cleaned</label>
+                <label class="choice"><input type="checkbox" name="included" value="beds" checked> Beds made, if linens are provided</label>
+              </fieldset>
+              <fieldset>
+                <legend>Paid add-ons</legend>
+                <label class="choice"><input type="checkbox" name="addon" data-amount="50" data-label="Inside oven" value="oven"> Inside oven, $50</label>
+                <label class="choice"><input type="checkbox" name="addon" data-amount="50" data-label="Inside fridge" value="fridge"> Inside fridge, $50</label>
+                <label class="choice"><input type="checkbox" name="addon" data-amount="50" data-label="Inside windows" value="windows"> Inside windows, $50</label>
+                <label class="choice"><input type="checkbox" name="addon" data-amount="30" data-label="Pet hair" value="pet"> Pet hair, $30</label>
+              </fieldset>
+              <p>
+                <label for="cleaners">Number of cleaners</label>
+                <select id="cleaners" name="cleaners">
+                  <option value="1">1 cleaner</option>
+                  <option value="2">2 cleaners</option>
+                  <option value="3">3 cleaners</option>
+                </select>
+                <span class="hint">This draft estimate does not change with the number of cleaners. That may affect how long the visit takes. Final rules: <span class="placeholder">[cleaner pricing rules]</span>.</span>
+              </p>
+            </div>
+
+            <div class="form-card">
+              <h2>4. Timing</h2>
+              <fieldset>
+                <legend>When would you like the visit?</legend>
+                <label class="choice"><input type="radio" name="timing" value="instant"> Instant, or same-day, with a 30% to 40% premium and a $60 minimum premium</label>
+                <label class="choice"><input type="radio" name="timing" value="nextday"> Next-day, with a 15% premium</label>
+                <label class="choice"><input type="radio" name="timing" value="scheduled" checked> Scheduled, at a later date</label>
+              </fieldset>
+              <fieldset>
+                <legend>Recurring visits</legend>
+                <label class="choice"><input type="radio" name="recurring" value="no" checked> One-time visit</label>
+                <label class="choice"><input type="radio" name="recurring" value="weekly"> Weekly, with 10% to 15% off</label>
+                <label class="choice"><input type="radio" name="recurring" value="biweekly"> Every two weeks, with 10% to 15% off</label>
+                <label class="choice"><input type="radio" name="recurring" value="monthly"> Monthly, with 10% to 15% off</label>
+              </fieldset>
+            </div>
+          </div>
+
+          <aside class="estimate-panel" aria-live="polite">
+            <p class="draft-note">Draft pricing, pending owner approval</p>
+            <h2>Your estimate range</h2>
+            <p class="estimate-figure" id="estimate-figure">—</p>
+            <p id="estimate-breakdown"></p>
+            <p><a class="btn" href="book.html">Continue to booking</a></p>
+          </aside>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2>[Business Name]</h2>
+        <p>Premium home cleaning in Hamilton, Ontario. Owned by Bhaia Aburaneh.</p>
+        <p>Phone: <span class="placeholder">[phone]</span><br>
+        Email: <span class="placeholder">[email]</span><br>
+        Address: <span class="placeholder">[address]</span></p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="quote.html">Get a quote</a></li>
+          <li><a href="book.html">Book a clean</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="cleaners.html">Become a cleaner</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="account.html">My account</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="policies.html">Service policies</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of use</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap copyright">
+      <p>&copy; [year] [Business Name]. All prices are in Canadian dollars, plus HST. Draft pricing, pending owner approval.</p>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

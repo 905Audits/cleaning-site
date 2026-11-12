@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a clean | [Business Name]</title>
+  <meta name="description" content="Request a home cleaning visit in Hamilton, Ontario. Booking requests will open soon.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">[Business Name]
+        <span>Premium home cleaning · Hamilton, Ontario</span>
+      </a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" aria-label="Primary">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quote.html">Get a quote</a></li>
+            <li><a href="book.html" aria-current="page">Book</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="cleaners.html">Become a cleaner</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">My account</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="draft-banner">
+    <p class="wrap">This is a first-draft website. Pricing, policies, and legal pages are pending owner approval, and they need legal review. Contact details are placeholders.</p>
+  </div>
+  <main id="main">
+    <section class="section">
+      <div class="wrap prose">
+        <h1>Book a clean</h1>
+        <p class="lead">Tell us where and when you would like a visit. This form does not send your request anywhere yet. When you submit it, you will see a short message that booking requests open soon.</p>
+        <p class="draft-note">Draft pricing, pending owner approval</p>
+      </div>
+      <div class="wrap" style="max-width:46rem;">
+        <form id="book-form" class="form-card" action="#" method="post">
+          <h2>Service address</h2>
+          <p>
+            <label for="street">Street address</label>
+            <input type="text" id="street" name="street" autocomplete="street-address" required>
+          </p>
+          <div class="form-row">
+            <p>
+              <label for="unit">Unit or apartment, optional</label>
+              <input type="text" id="unit" name="unit" autocomplete="address-line2">
+            </p>
+            <p>
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" value="Hamilton" autocomplete="address-level2" required>
+            </p>
+          </div>
+          <div class="form-row">
+            <p>
+              <label for="province">Province</label>
+              <input type="text" id="province" name="province" value="Ontario" autocomplete="address-level1" required>
+            </p>
+            <p>
+              <label for="postal">Postal code</label>
+              <input type="text" id="postal" name="postal" autocomplete="postal-code" required>
+            </p>
+          </div>
+
+          <h2>Date, time, and timing</h2>
+          <div class="form-row">
+            <p>
+              <label for="visit-date">Preferred date</label>
+              <input type="date" id="visit-date" name="visit-date" required>
+            </p>
+            <p>
+              <label for="visit-time">Preferred time</label>
+              <input type="time" id="visit-time" name="visit-time" required>
+            </p>
+          </div>
+          <fieldset>
+            <legend>Timing option</legend>
+            <label class="choice"><input type="radio" name="book-timing" value="instant" required> Instant, or same-day</label>
+            <label class="choice"><input type="radio" name="book-timing" value="nextday"> Next-day</label>
+            <label class="choice"><input type="radio" name="book-timing" value="scheduled"> Scheduled</label>
+            <span class="hint">Same-day visits carry a draft premium of 30% to 40%, with a $60 minimum premium. Next-day visits carry a draft premium of 15%. Draft pricing, pending owner approval.</span>
+          </fieldset>
+
+          <h2>Your contact details</h2>
+          <div class="form-row">
+            <p>
+              <label for="full-name">Full name</label>
+              <input type="text" id="full-name" name="full-name" autocomplete="name" required>
+            </p>
+            <p>
+              <label for="book-phone">Phone</label>
+              <input type="tel" id="book-phone" name="phone" autocomplete="tel" required>
+            </p>
+          </div>
+          <p>
+            <label for="book-email">Email</label>
+            <input type="email" id="book-email" name="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="notes">Notes for the visit, optional</label>
+            <span class="hint" id="notes-hint">Access instructions, pets, parking, or anything we should know.</span>
+            <textarea id="notes" name="notes" aria-describedby="notes-hint"></textarea>
+          </p>
+
+          <h2>Consent</h2>
+          <div class="consent-box">
+            <label class="choice">
+              <input type="checkbox" id="booking-consent" name="booking-consent" required>
+              <span>I understand this is a booking request for [Business Name], and that submitting this form does not confirm a visit until booking requests are open and the request is accepted.</span>
+            </label>
+          </div>
+          <div class="consent-box">
+            <label class="choice">
+              <input type="checkbox" id="marketing-opt-in" name="marketing-opt-in" value="yes">
+              <span>I agree to receive promotional emails and messages from [Business Name] about cleaning services and offers. This is optional, and it is separate from my booking request. I can unsubscribe at any time. Message frequency may vary. <span class="placeholder">[CASL sender identity and contact details]</span></span>
+            </label>
+            <p class="hint">This box is left unchecked on purpose. We will only send marketing messages if you opt in, in line with Canada’s Anti-Spam Legislation (CASL).</p>
+          </div>
+
+          <button type="submit" class="btn">Submit booking request</button>
+          <p class="form-status" id="book-status" hidden tabindex="-1">Booking requests open soon. Your details were not sent anywhere, and no visit has been booked.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h2>[Business Name]</h2>
+        <p>Premium home cleaning in Hamilton, Ontario. Owned by Bhaia Aburaneh.</p>
+        <p>Phone: <span class="placeholder">[phone]</span><br>
+        Email: <span class="placeholder">[email]</span><br>
+        Address: <span class="placeholder">[address]</span></p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="quote.html">Get a quote</a></li>
+          <li><a href="book.html">Book a clean</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="cleaners.html">Become a cleaner</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="account.html">My account</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Policies</h2>
+        <ul>
+          <li><a href="policies.html">Service policies</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of use</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap copyright">
+      <p>&copy; [year] [Business Name]. All prices are in Canadian dollars, plus HST. Draft pricing, pending owner approval.</p>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>
