@@ -1,5 +1,6 @@
 @font-face{font-family:"Jakarta";src:url("../fonts/jakarta-latin.woff2") format("woff2");font-weight:200 800;font-display:swap}
-:root,html{color-scheme:only light!important}
+:root,html{color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root,html{color-scheme:light dark}html,body{background:#fff!important;color:#0E2A3B!important}input,select,textarea,button,dialog{color-scheme:light}}
 :root{--ink:#0E2A3B;--muted:#46606F;--brand:#08717E;--brand-d:#065A65;--aqua:#12B5C9;--mint:#3DDC97;--aqua-50:#E9F9FB;--mint-50:#EAFBF3;--line:#D8E9EE;--bg:#F6FBFC;--white:#fff;--warn:#8A4B00;--warn-bg:#FFF5E6;--err:#B42318;--r:18px;--shadow:0 10px 30px -12px rgba(14,42,59,.18);--shadow-lg:0 30px 60px -20px rgba(14,42,59,.25);--grad:linear-gradient(135deg,#12B5C9,#3DDC97)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
