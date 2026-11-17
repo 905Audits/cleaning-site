@@ -1,167 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-CA" class="no-js">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Book a clean | [Business Name]</title>
-  <meta name="description" content="Request a home cleaning visit in Hamilton, Ontario. Booking requests will open soon.">
-  <link rel="stylesheet" href="css/styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="only light">
+<meta name="supported-color-schemes" content="light only">
+<meta name="darkreader-lock">
+<meta name="theme-color" content="#ffffff">
+<title>Book a clean | Tap & Tidy Cleaning</title>
+<meta name="description" content="Build your clean, see your estimated price live, and request your booking in about 60 seconds.">
+<link rel="canonical" href="https://905audits.github.io/cleaning-site/book.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Book a clean | Tap & Tidy Cleaning">
+<meta property="og:description" content="Build your clean, see your estimated price live, and request your booking in about 60 seconds.">
+<meta property="og:image" content="https://905audits.github.io/cleaning-site/assets/img/og-1200x630.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css?v=5">
+
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="logo" href="index.html">[Business Name]
-        <span>Premium home cleaning · Hamilton, Ontario</span>
-      </a>
-      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-      <nav id="site-nav" aria-label="Primary">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="quote.html">Get a quote</a></li>
-            <li><a href="book.html" aria-current="page">Book</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="cleaners.html">Become a cleaner</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="account.html">My account</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <div class="draft-banner">
-    <p class="wrap">This is a first-draft website. Pricing, policies, and legal pages are pending owner approval, and they need legal review. Contact details are placeholders.</p>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+ <nav class="container nav" aria-label="Main">
+  <a class="brand" href="index.html" aria-label="Tap &amp; Tidy Cleaning, home"><img src="assets/img/mark.svg" alt="" width="40" height="40"><span><b>Tap &amp; Tidy</b><small>CLEANING</small></span></a>
+  <ul class="nav-links" id="nav-links"><li><a href="services.html">Services and pricing</a></li><li><a href="index.html#how">How it works</a></li><li><a href="faq.html">FAQ</a></li><li><a href="cleaners.html">Become a cleaner</a></li><li><a href="contact.html">Contact</a></li></ul>
+  <div class="nav-cta">
+   <a class="btn btn-primary btn-book-top" href="book.html">Book a clean</a>
+   <button class="menu-btn" aria-controls="nav-links" aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
-  <main id="main">
-    <section class="section">
-      <div class="wrap prose">
-        <h1>Book a clean</h1>
-        <p class="lead">Tell us where and when you would like a visit. This form does not send your request anywhere yet. When you submit it, you will see a short message that booking requests open soon.</p>
-        <p class="draft-note">Draft pricing, pending owner approval</p>
-      </div>
-      <div class="wrap" style="max-width:46rem;">
-        <form id="book-form" class="form-card" action="#" method="post">
-          <h2>Service address</h2>
-          <p>
-            <label for="street">Street address</label>
-            <input type="text" id="street" name="street" autocomplete="street-address" required>
-          </p>
-          <div class="form-row">
-            <p>
-              <label for="unit">Unit or apartment, optional</label>
-              <input type="text" id="unit" name="unit" autocomplete="address-line2">
-            </p>
-            <p>
-              <label for="city">City</label>
-              <input type="text" id="city" name="city" value="Hamilton" autocomplete="address-level2" required>
-            </p>
-          </div>
-          <div class="form-row">
-            <p>
-              <label for="province">Province</label>
-              <input type="text" id="province" name="province" value="Ontario" autocomplete="address-level1" required>
-            </p>
-            <p>
-              <label for="postal">Postal code</label>
-              <input type="text" id="postal" name="postal" autocomplete="postal-code" required>
-            </p>
-          </div>
+ </nav>
+</header>
 
-          <h2>Date, time, and timing</h2>
-          <div class="form-row">
-            <p>
-              <label for="visit-date">Preferred date</label>
-              <input type="date" id="visit-date" name="visit-date" required>
-            </p>
-            <p>
-              <label for="visit-time">Preferred time</label>
-              <input type="time" id="visit-time" name="visit-time" required>
-            </p>
-          </div>
-          <fieldset>
-            <legend>Timing option</legend>
-            <label class="choice"><input type="radio" name="book-timing" value="instant" required> Instant, or same-day</label>
-            <label class="choice"><input type="radio" name="book-timing" value="nextday"> Next-day</label>
-            <label class="choice"><input type="radio" name="book-timing" value="scheduled"> Scheduled</label>
-            <span class="hint">Same-day visits carry a draft premium of 30% to 40%, with a $60 minimum premium. Next-day visits carry a draft premium of 15%. Draft pricing, pending owner approval.</span>
-          </fieldset>
-
-          <h2>Your contact details</h2>
-          <div class="form-row">
-            <p>
-              <label for="full-name">Full name</label>
-              <input type="text" id="full-name" name="full-name" autocomplete="name" required>
-            </p>
-            <p>
-              <label for="book-phone">Phone</label>
-              <input type="tel" id="book-phone" name="phone" autocomplete="tel" required>
-            </p>
-          </div>
-          <p>
-            <label for="book-email">Email</label>
-            <input type="email" id="book-email" name="email" autocomplete="email" required>
-          </p>
-          <p>
-            <label for="notes">Notes for the visit, optional</label>
-            <span class="hint" id="notes-hint">Access instructions, pets, parking, or anything we should know.</span>
-            <textarea id="notes" name="notes" aria-describedby="notes-hint"></textarea>
-          </p>
-
-          <h2>Consent</h2>
-          <div class="consent-box">
-            <label class="choice">
-              <input type="checkbox" id="booking-consent" name="booking-consent" required>
-              <span>I understand this is a booking request for [Business Name], and that submitting this form does not confirm a visit until booking requests are open and the request is accepted.</span>
-            </label>
-          </div>
-          <div class="consent-box">
-            <label class="choice">
-              <input type="checkbox" id="marketing-opt-in" name="marketing-opt-in" value="yes">
-              <span>I agree to receive promotional emails and messages from [Business Name] about cleaning services and offers. This is optional, and it is separate from my booking request. I can unsubscribe at any time. Message frequency may vary. <span class="placeholder">[CASL sender identity and contact details]</span></span>
-            </label>
-            <p class="hint">This box is left unchecked on purpose. We will only send marketing messages if you opt in, in line with Canada’s Anti-Spam Legislation (CASL).</p>
-          </div>
-
-          <button type="submit" class="btn">Submit booking request</button>
-          <p class="form-status" id="book-status" hidden tabindex="-1">Booking requests open soon. Your details were not sent anywhere, and no visit has been booked.</p>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <div>
-        <h2>[Business Name]</h2>
-        <p>Premium home cleaning in Hamilton, Ontario. Owned by Bhaia Aburaneh.</p>
-        <p>Phone: <span class="placeholder">[phone]</span><br>
-        Email: <span class="placeholder">[email]</span><br>
-        Address: <span class="placeholder">[address]</span></p>
-      </div>
-      <div>
-        <h2>Explore</h2>
-        <ul>
-          <li><a href="quote.html">Get a quote</a></li>
-          <li><a href="book.html">Book a clean</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="cleaners.html">Become a cleaner</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="account.html">My account</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Policies</h2>
-        <ul>
-          <li><a href="policies.html">Service policies</a></li>
-          <li><a href="privacy.html">Privacy policy</a></li>
-          <li><a href="terms.html">Terms of use</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+<main id="main" class="bg-soft">
+<div class="container book-wrap">
+ <div>
+ <div id="flow">
+  <ol class="progress" aria-label="Booking progress"><li>Service</li><li>Home</li><li>Extras</li><li>Time</li><li>Details</li></ol>
+  <p id="step-status" class="sr-only" aria-live="polite"></p>
+  <div class="panel">
+   <button type="button" class="backlink" id="m-back">← Back</button>
+   <div class="step" data-step="1">
+    <h2 tabindex="-1">What kind of clean do you need?</h2><p class="muted">Pick a service. You will see your estimate update live.</p>
+    <fieldset style="border:0;padding:0;margin:0"><legend class="sr-only">Service</legend><div class="opt-grid"><label class="opt"><input type="radio" name="service" value="standard"><img src="assets/img/living-room-800.webp" alt="" width="88" height="72"><span class="txt"><b>Standard clean</b><span class="small muted">Regular upkeep for a fresh home</span><span class="from" data-from="standard"></span></span><span class="radio" aria-hidden="true"></span></label><label class="opt"><input type="radio" name="service" value="deep"><img src="assets/img/sink-deep-800.webp" alt="" width="88" height="72"><span class="txt"><b>Deep clean</b><span class="small muted">Top-to-bottom detail and build-up</span><span class="from" data-from="deep"></span></span><span class="radio" aria-hidden="true"></span></label><label class="opt"><input type="radio" name="service" value="move"><img src="assets/img/move-kitchen-800.webp" alt="" width="88" height="72"><span class="txt"><b>Move-in or move-out</b><span class="small muted">Empty-home clean for moving day</span><span class="from" data-from="move"></span></span><span class="radio" aria-hidden="true"></span></label></div></fieldset><p class="err-msg" data-for="service" aria-live="polite"></p>
+    <p class="small muted" style="margin-top:14px">Not sure? A Deep clean is best for a first visit or a home that hasn't been professionally cleaned in a while.</p>
+   </div>
+   <div class="step" data-step="2">
+    <h2 tabindex="-1">Tell us about your home</h2>
+    <fieldset style="border:0;padding:0;margin:0 0 16px"><legend style="font-weight:600;font-size:.92rem;margin-bottom:8px">Bedrooms</legend><div class="chips"><label><input type="radio" name="bed" value="0"><span>Studio</span></label><label><input type="radio" name="bed" value="1"><span>1</span></label><label><input type="radio" name="bed" value="2"><span>2</span></label><label><input type="radio" name="bed" value="3"><span>3</span></label><label><input type="radio" name="bed" value="4"><span>4</span></label><label><input type="radio" name="bed" value="5"><span>5+</span></label></div></fieldset>
+    <div class="two">
+     <div class="field"><span id="bath-l" style="font-weight:600;font-size:.92rem">Bathrooms</span><div class="stepper" role="group" aria-labelledby="bath-l"><button type="button" data-d="-0.5" aria-label="Fewer bathrooms">−</button><output id="bath-out" aria-live="polite">1 bathroom</output><button type="button" data-d="0.5" aria-label="More bathrooms">+</button></div></div>
+     <div class="field"><label for="sqft">Total square feet <small>(optional)</small></label><input id="sqft" type="number" inputmode="numeric" min="200" max="15000" step="50" placeholder="e.g. 1200"><p class="err-msg" data-for="sqft" aria-live="polite"></p></div>
     </div>
-    <div class="wrap copyright">
-      <p>&copy; [year] [Business Name]. All prices are in Canadian dollars, plus HST. Draft pricing, pending owner approval.</p>
+    <div class="two">
+     <div class="field"><label for="htype">Home type</label><select id="htype"><option value="">Choose one</option><option>Condo or apartment</option><option>Townhouse</option><option>Detached or semi-detached house</option></select></div>
+     <fieldset class="field" style="border:0;padding:0;margin:0 0 14px"><legend style="font-weight:600;font-size:.92rem;margin-bottom:6px">Pets at home?</legend><div class="chips"><label><input type="radio" name="pets" value="No pets"><span>No pets</span></label><label><input type="radio" name="pets" value="Pets at home"><span>🐾 Yes</span></label></div></fieldset>
     </div>
-  </footer>
-  <script src="js/site.js"></script>
+    <div class="field"><span style="font-weight:600;font-size:.92rem">Photos <small>(optional, helps us confirm your quote)</small></span>
+     <div class="drop" id="drop" role="button" tabindex="0" aria-describedby="photo-help"><b>📷 Add photos</b><br><span class="small muted" id="photo-help">Up to 8 photos of the rooms that need the most attention. You can skip this.</span></div>
+     <input type="file" id="photos" accept="image/*" multiple hidden>
+     <div class="thumbs" id="thumbs"></div><span class="small muted" id="photo-count" aria-live="polite"></span>
+    </div>
+   </div>
+   <div class="step" data-step="3">
+    <h2 tabindex="-1">Choose your extras</h2>
+    <p class="note">✚ Add-ons are à la carte, subject to assessment. We confirm them in your quote.</p>
+    <fieldset style="border:0;padding:0;margin:16px 0"><legend class="sr-only">Add-ons</legend><div class="addons"><label class="addon"><input type="checkbox" name="addon" value="Inside oven"><span class="em" aria-hidden="true">🔥</span>Inside oven</label><label class="addon"><input type="checkbox" name="addon" value="Inside fridge"><span class="em" aria-hidden="true">🧊</span>Inside fridge</label><label class="addon"><input type="checkbox" name="addon" value="Inside windows"><span class="em" aria-hidden="true">🪟</span>Inside windows</label><label class="addon"><input type="checkbox" name="addon" value="Inside cabinets"><span class="em" aria-hidden="true">🗄️</span>Inside cabinets</label><label class="addon"><input type="checkbox" name="addon" value="Pet hair treatment"><span class="em" aria-hidden="true">🐾</span>Pet hair treatment</label><label class="addon"><input type="checkbox" name="addon" value="Laundry, wash and fold"><span class="em" aria-hidden="true">🧺</span>Laundry, wash and fold</label><label class="addon"><input type="checkbox" name="addon" value="Change bed linens"><span class="em" aria-hidden="true">🛏️</span>Change bed linens</label><label class="addon"><input type="checkbox" name="addon" value="Dishes"><span class="em" aria-hidden="true">🍽️</span>Dishes</label><label class="addon"><input type="checkbox" name="addon" value="Inside microwave"><span class="em" aria-hidden="true">📦</span>Inside microwave</label><label class="addon"><input type="checkbox" name="addon" value="Wall spot cleaning"><span class="em" aria-hidden="true">🧱</span>Wall spot cleaning</label><label class="addon"><input type="checkbox" name="addon" value="Balcony or patio sweep"><span class="em" aria-hidden="true">🪴</span>Balcony or patio sweep</label><label class="addon"><input type="checkbox" name="addon" value="Detailed baseboards"><span class="em" aria-hidden="true">📏</span>Detailed baseboards</label></div></fieldset>
+    <div id="freq-wrap"><h3>How often?</h3><fieldset style="border:0;padding:0;margin:0"><legend class="sr-only">Frequency</legend><div class="freq"><label class="opt"><input type="radio" name="freq" value="once"><b>One-time</b><small class=muted style=color:var(--muted)>Standard price</small></label><label class="opt"><input type="radio" name="freq" value="weekly"><b>Weekly</b><small>15% off</small></label><label class="opt"><input type="radio" name="freq" value="biweekly"><b>Every 2 weeks</b><small>12% off</small></label><label class="opt"><input type="radio" name="freq" value="monthly"><b>Monthly</b><small>10% off</small></label></div></fieldset></div>
+    <p id="freq-na" class="small muted" hidden>Deep and move cleans are one-time. Recurring savings apply to Standard cleans.</p>
+    <div class="field" style="margin-top:16px"><label for="notes">Anything we should know? <small>(optional)</small></label><textarea id="notes" placeholder="Problem areas, parking, allergies, and so on"></textarea></div>
+   </div>
+   <div class="step" data-step="4">
+    <h2 tabindex="-1">Pick your date and arrival time</h2>
+    <div class="toggle"><div><b>⚡ Urgent booking</b><br><span class="small">Need a clean within 72 hours? Urgent fee applies, confirmed in your quote.</span></div><label class="switch"><input type="checkbox" id="urgent" aria-label="Urgent booking within 72 hours"><span></span></label></div>
+    <div class="cal-head"><button type="button" id="cal-prev" aria-label="Previous month">‹</button><b id="cal-label" aria-live="polite"></b><button type="button" id="cal-next" aria-label="Next month">›</button></div>
+    <div class="cal" id="cal"></div>
+    <div class="legend"><span><i style="background:repeating-linear-gradient(135deg,#F6F9FA 0 3px,#E3EAED 3px 6px)"></i>Within 72 hours (Urgent only)</span><span><i style="background:#E08A00;border-radius:50%"></i>Holiday, prepayment required</span></div>
+    <h3>Arrival time</h3><div class="slots" id="slots"></div><p class="err-msg" data-for="date" aria-live="polite"></p>
+    <div id="time-notes" style="display:grid;gap:8px;margin-top:14px"></div>
+    <p class="small muted">Times reflect our current availability and are confirmed with your quote.</p>
+   </div>
+   <div class="step" data-step="5">
+    <h2 tabindex="-1">Where and who?</h2>
+    <div class="field"><label for="street">Street address</label><input id="street" type="text" autocomplete="address-line1"><p class="err-msg" data-for="street" aria-live="polite"></p></div>
+    <div class="three">
+     <div class="field"><label for="unit">Unit <small>(optional)</small></label><input id="unit" type="text" autocomplete="address-line2"></div>
+     <div class="field"><label for="city">City</label><select id="city" autocomplete="address-level2"><option value="">Choose</option><option>Hamilton</option><option>Burlington</option><option>Oakville</option><option>Cambridge</option><option value="Other">Other</option></select><p class="err-msg" data-for="city" aria-live="polite"></p></div>
+     <div class="field"><label for="postal">Postal code</label><input id="postal" type="text" autocomplete="postal-code" maxlength="7" placeholder="L8P 4R5"><p class="err-msg" data-for="postal" aria-live="polite"></p></div>
+    </div>
+    <p id="area" class="area-ok" aria-live="polite"></p>
+    <div class="field"><label for="access">How will we get in?</label><select id="access"><option value="">Choose one</option><option>I'll be home</option><option>Key or lockbox</option><option>Concierge or building access</option><option>I'll share details later</option></select></div>
+    <div class="field"><label for="name">Full name</label><input id="name" type="text" autocomplete="name"><p class="err-msg" data-for="name" aria-live="polite"></p></div>
+    <div class="two">
+     <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email"><p class="err-msg" data-for="email" aria-live="polite"></p></div>
+     <div class="field"><label for="phone">Mobile phone</label><input id="phone" type="tel" autocomplete="tel" placeholder="905-555-0123"><p class="err-msg" data-for="phone" aria-live="polite"></p></div>
+    </div>
+    <div class="field"><label for="pref">Send my quote by</label><select id="pref"><option>Text</option><option>Email</option><option>Phone call</option></select></div>
+    <label class="check" style="margin:8px 0 12px"><input type="checkbox" id="agree"><span>I agree to the <a href="policies.html" target="_blank">booking and cancellation policy</a>, <a href="terms.html" target="_blank">terms</a>, and <a href="privacy.html" target="_blank">privacy policy</a>. I understand my price is an estimate until my quote is confirmed.</span></label><p class="err-msg" data-for="agree" aria-live="polite"></p>
+    <label class="check"><input type="checkbox" id="casl"><span>Optional: send me cleaning tips and special offers by email or text. I can unsubscribe at any time.</span></label>
+   </div>
+   <div class="step-nav"><button type="button" class="btn btn-ghost" id="back">← Back</button><button type="button" class="btn btn-primary btn-lg" id="next">Continue</button></div>
+  </div>
+ </div>
+ <div id="confirm" class="panel confirm" hidden>
+  <div class="big-tick" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+  <h1 tabindex="-1">Your booking request is in</h1>
+  <p>Reference <span class="ref" id="c-ref"></span></p>
+  <p class="lead" id="c-sum"></p>
+  <div id="c-live" hidden><p>We'll review your details and send your confirmed quote. Your booking is locked in once you approve it.</p></div>
+  <div id="c-preview" class="note warn" style="text-align:left;margin:16px 0" hidden><span><b>Preview mode:</b> online booking opens soon. Your request was saved on this device only and was not sent. Please keep your reference number.</span></div>
+  <p id="c-hol" class="note warn" style="text-align:left" hidden>🎉 Holiday booking: prepayment is required to hold your time, and a holiday premium applies.</p>
+  <h3 style="margin-top:22px">What happens next</h3>
+  <ol style="text-align:left;max-width:520px;margin:0 auto 22px"><li>We review your home details, photos, and extras.</li><li>You receive your confirmed quote by your chosen method.</li><li>Approve it, and your clean is booked.</li></ol>
+  <a class="btn btn-primary" href="index.html">Back to home</a>
+ </div>
+ </div>
+ <aside class="summary" id="summary" aria-label="Order summary">
+  <div class="sum-card">
+   <div class="sum-top"><b>Your clean</b><div class="small">Live estimate</div></div>
+   <div class="sum-body">
+    <div class="sum-line"><span>Service</span><span id="sum-service"></span></div>
+    <div class="sum-line"><span>Home</span><span id="sum-home"></span></div>
+    <div class="sum-line"><span>Photos</span><span id="sum-photos"></span></div>
+    <div class="sum-line"><span>Add-ons</span><span id="sum-addons"></span></div>
+    <div class="sum-line"><span>Frequency</span><span id="sum-freq"></span></div>
+    <div class="sum-line"><span>When</span><span id="sum-when"></span></div>
+    <div class="sum-line"><span>Where</span><span id="sum-where"></span></div>
+    <ul class="sum-flags" id="sum-flags"></ul>
+    <div class="sum-total"><span><b>Estimated price</b></span><span class="amt" id="sum-amt" aria-live="polite"></span></div>
+    <p class="small" id="sum-save" style="color:#0B6B49;font-weight:700;margin:6px 0 0" hidden></p>
+    <p class="sum-fine">Estimated price, final quote confirmed before booking. Add-ons, urgent, holiday, and after-hours charges are confirmed in your quote.</p>
+    <p class="sum-fine">🔒 No payment is taken now.</p>
+   </div>
+  </div>
+ </aside>
+</div>
+<div class="mbar"><button type="button" class="est" id="m-est" aria-expanded="false" aria-controls="summary"><small>Estimated price ▴</small><b id="m-amt">—</b></button><button type="button" class="btn btn-primary" id="m-next">Continue</button></div>
+</main><footer class="site-footer">
+ <div class="container">
+  <div class="foot-grid">
+   <div class="foot-brand"><a class="brand" href="index.html" style="color:#fff"><img src="assets/img/mark.svg" alt="" width="40" height="40"><span><b>Tap &amp; Tidy</b><small style="color:#7FE3C4">CLEANING</small></span></a>
+    <p style="margin-top:14px">Premium home cleaning in Hamilton, Burlington, Oakville, and Cambridge. Book online 24/7.</p>
+    <a class="btn btn-primary" href="book.html">Book a clean</a></div>
+   <div><h4>Services</h4><ul><li><a href="services.html#standard">Standard clean</a></li><li><a href="services.html#deep">Deep clean</a></li><li><a href="services.html#move">Move-in or move-out</a></li><li><a href="services.html#addons">Add-ons</a></li></ul></div>
+   <div><h4>Company</h4><ul><li><a href="faq.html">FAQ</a></li><li><a href="cleaners.html">Become a cleaner</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+   <div><h4>Policies</h4><ul><li><a href="policies.html">Booking and cancellation</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+  </div>
+  <div class="foot-bottom">
+   <p>© <span id="yr">2026</span> Tap &amp; Tidy Cleaning. Prices shown are estimates; your final quote is confirmed before booking.</p>
+   <p>Photos via Pexels by <a href="https://www.pexels.com/photo/29252561/">Mateusz Pielech</a>, <a href="https://www.pexels.com/photo/19866404/">Lisa Anna</a>, <a href="https://www.pexels.com/photo/9462224/">Liliana Drew</a>, <a href="https://www.pexels.com/photo/31602332/">Jaelen Kempson</a>, <a href="https://www.pexels.com/photo/8031895/">Curtis Adams</a>, <a href="https://www.pexels.com/photo/4440533/">Polina Tankilevitch</a>, <a href="https://www.pexels.com/photo/4440540/">Polina Tankilevitch</a>, <a href="https://www.pexels.com/photo/28576631/">Jonathan Borba</a>, used under the Pexels license. Photos show example homes and cleaning, not our team.</p>
+  </div>
+ </div>
+</footer>
+
+<script src="assets/js/config.js?v=5"></script>
+<script src="assets/js/pricing.js?v=5"></script>
+<script src="assets/js/main.js?v=5"></script>
+<script src="assets/js/book.js?v=5"></script>
+<script>document.getElementById("yr").textContent=new Date().getFullYear()</script>
 </body>
 </html>
