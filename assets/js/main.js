@@ -35,6 +35,50 @@
       TT_SEND(data,f.dataset.ttForm).then(function(live){f.reset();msg.innerHTML=live?"<strong>Thank you.</strong> We received your message and will reply soon.":"<strong>Preview mode:</strong> online forms open soon. Your details were saved on this device only and were not sent.";msg.focus()});
     });
   });
+
+  /* see-us-in-action: poster first, lazy-play in view, respect reduced motion */
+  var clips=document.querySelectorAll(".js-action-video");
+  if(clips.length){
+    if(rm){
+      clips.forEach(function(v){
+        var img=v.parentNode.querySelector(".action-poster");
+        if(img){img.alt=v.getAttribute("aria-label")||"";img.removeAttribute("aria-hidden")}
+      });
+    }else{
+      function playSafe(v){var p=v.play();if(p&&p.catch)p.catch(function(){})}
+      function syncBtn(v){
+        var btn=v.parentNode.querySelector(".action-toggle");
+        if(!btn)return;
+        var paused=v.paused;
+        btn.classList.toggle("is-paused",paused);
+        btn.setAttribute("aria-label",paused?"Play video":"Pause video");
+      }
+      if("IntersectionObserver" in window){
+        var vio=new IntersectionObserver(function(es){
+          es.forEach(function(e){
+            var v=e.target;
+            if(e.isIntersecting) playSafe(v);
+            else v.pause();
+            syncBtn(v);
+          });
+        },{threshold:.35});
+        clips.forEach(function(v){vio.observe(v)});
+      }else{clips.forEach(playSafe)}
+      clips.forEach(function(v){
+        var media=v.parentNode, btn=media.querySelector(".action-toggle");
+        v.addEventListener("playing",function(){media.classList.add("is-ready");syncBtn(v)});
+        v.addEventListener("pause",function(){syncBtn(v)});
+        if(btn){
+          btn.hidden=false;
+          btn.addEventListener("click",function(){
+            if(v.paused) playSafe(v); else v.pause();
+            syncBtn(v);
+          });
+          syncBtn(v);
+        }
+      });
+    }
+  }
 })();
 window.TT_SEND=function(data,kind){
   var C=window.TT_CONFIG||{};
